@@ -1,0 +1,9 @@
+// Base
+@use "./base/reset";
+@use "./base/base";
+
+// Blocks
+@use "./blocks/header";
+@use "./blocks/nav";
+@use "./blocks/info";
+@use "./blocks/benefits";
