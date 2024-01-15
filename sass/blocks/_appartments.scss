@@ -1,16 +1,8 @@
 @use "../base/vars/colors" as *;
 @use "../base/vars/fonts" as *;
 
-.appartments__title {
-  color: $color-accent;
-  font-family: $font-accent;
-  font-size: 36px;
-  font-weight: 700;
-
-  margin-bottom: 88px;
-}
-
 .appartments__list {
+  margin-top: 88px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
