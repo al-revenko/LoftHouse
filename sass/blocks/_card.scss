@@ -1,0 +1,74 @@
+@use "../base/vars/colors" as *;
+@use "../base/vars/fonts" as *;
+
+.card {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: $color-white;
+  background-color: $color-accent;
+  font-size: 24px;
+  font-weight: 400;
+  overflow: hidden;
+
+  h3 {
+    z-index: 9;
+
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    right: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &::before {
+    z-index: 7;
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(36, 43, 51, 0.1) 0%,
+      $color-dark 100%
+    );
+  }
+
+  &::after {
+    z-index: 8;
+
+    transition: opacity 0.2s ease-in;
+
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: transparentize($color: $color-accent, $amount: 0.4) solid;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+      filter: contrast(110%) brightness(1.2) saturate(1.2);
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  img,
+  &::after {
+    transition: all 0.2s ease-in;
+  }
+}
