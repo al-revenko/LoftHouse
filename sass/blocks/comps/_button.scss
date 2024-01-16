@@ -1,0 +1,14 @@
+@use "../../base/vars/colors" as *;
+@use "../../base/vars/fonts" as *;
+
+.button {
+  background-color: $color-accent;
+  border: none;
+  color: $color-white;
+  text-align: center;
+  font-family: $font-main;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px; 
+  cursor: pointer;
+}

@@ -3,9 +3,16 @@
 @use "./base/base";
 
 // Blocks
-@use "./blocks/header";
-@use "./blocks/nav";
-@use "./blocks/info";
-@use "./blocks/benefits";
-@use "./blocks/appartments";
-@use "./blocks/card";
+
+//sections
+@use "./blocks/sections/header";
+@use "./blocks/sections/benefits";
+@use "./blocks/sections/appartments";
+@use "./blocks/sections/cta";
+
+//composition blocks
+@use "./blocks/comps/nav";
+@use "./blocks/comps/info";
+@use "./blocks/comps/card";
+@use "./blocks/comps/input";
+@use "./blocks/comps/button";
