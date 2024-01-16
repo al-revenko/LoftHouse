@@ -4,14 +4,12 @@
 .button {
   padding: 12px;
   background-color: $color-accent;
-  border: none;
   color: $color-white;
   text-align: center;
   font-family: $font-main;
   font-size: 16px;
   font-weight: 700;
   line-height: 27px; 
-  cursor: pointer;
   transition: background-color 0.2s ease-in;
 
   &:hover {

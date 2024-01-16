@@ -17,6 +17,11 @@ a {
   }
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 .title-2 {
   color: $color-accent;
   font-family: $font-accent;
