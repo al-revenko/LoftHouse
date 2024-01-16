@@ -12,13 +12,14 @@
       #242b33 90.1%
     ),
     linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%),
-    url(/img/cta-bg.jpg) no-repeat;
+    url(/img/cta-bg.jpg) no-repeat, #c4c4c4;
 }
 
 .cta__content {
   margin-top: 17px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .cta__discription {
@@ -31,19 +32,7 @@
 
 .cta__form {
   display: grid;
-  grid-template-columns: repeat(2, 255px);
-  grid-template-rows: repeat(2, 50px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 30px 35px;
-
-  p {
-    width: 100%;
-    height: 100%;
-    color: #e7e7e7;
-    padding: 10px 0;
-    text-align: center;
-    font-family: $font-main;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16px;
-  }
 }
