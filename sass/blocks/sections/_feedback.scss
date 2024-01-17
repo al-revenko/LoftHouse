@@ -1,0 +1,12 @@
+@use "../../base/vars/colors" as *;
+@use "../../base/vars/fonts" as *;
+
+.feedback {
+  padding-bottom: 180px;
+}
+
+.feedback__form {
+  margin-top: 38px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}

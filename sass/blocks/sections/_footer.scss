@@ -1,0 +1,35 @@
+@use "../../base/vars/colors" as *;
+@use "../../base/vars/fonts" as *;
+
+.footer {
+  background-color: $color-footer-bg;
+  padding: 60px 0 51px;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  color: $color-white;
+  font-family: $font-main;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+}
+
+.footer__content__col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__social {
+  margin-top: 5px;
+  display: flex;
+  gap: 22px;
+}
+
+.footer__email-span {
+  color: $color-accent;
+  font-weight: 700;
+}

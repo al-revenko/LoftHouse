@@ -2,8 +2,7 @@
 @use "../../base/vars/fonts" as *;
 
 .cta {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding: 188px 0;
 
   background: linear-gradient(
       180deg,
@@ -31,8 +30,6 @@
 }
 
 .cta__form {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 30px 35px;
 }

@@ -1,0 +1,12 @@
+@use "../../base/vars/colors" as *;
+@use "../../base/vars/fonts" as *;
+
+.map {
+  padding-bottom: 180px;
+}
+
+.map__content {
+  margin-top: 88px;
+  background-color: #626262;
+  min-height: 358px;
+}

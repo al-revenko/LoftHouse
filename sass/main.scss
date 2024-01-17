@@ -10,8 +10,12 @@
 @use "./blocks/sections/appartments";
 @use "./blocks/sections/cta";
 @use "./blocks/sections/video";
+@use "./blocks/sections/map";
+@use "./blocks/sections/feedback";
+@use "./blocks/sections/footer";
 
 //composition blocks
+@use "./blocks/comps/logo";
 @use "./blocks/comps/nav";
 @use "./blocks/comps/info";
 @use "./blocks/comps/card";

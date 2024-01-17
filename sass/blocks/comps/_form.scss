@@ -2,19 +2,17 @@
 @use "../../base/vars/fonts" as *;
 
 .form {
+  display: grid;
+  align-items: center;
+
   .input-text,
-  .button,
-  .form-disclaimer {
-    max-width: 255px;
-    max-height: 50px;
+  .button {
+    min-height: 50px;
   }
 }
 
 .form-disclaimer {
-  width: 100%;
-  height: 100%;
   color: #e7e7e7;
-  padding: 10px 0;
   text-align: center;
   font-family: $font-main;
   font-size: 13px;
