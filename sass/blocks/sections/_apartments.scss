@@ -1,7 +1,7 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
 
-.appartments__list {
+.apartments__list {
   margin-top: 88px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
