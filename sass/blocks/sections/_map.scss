@@ -1,8 +1,17 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
+@use "../../mixins/decorNumber.mixin" as *;
 
 .map {
   padding-bottom: 180px;
+  
+  .center-container {
+    position: relative;
+
+    &::after {
+      @include decorNumber("V", 1, 'left')
+    }
+  }
 }
 
 .map__content {

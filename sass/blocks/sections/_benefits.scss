@@ -1,8 +1,17 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
+@use "../../mixins/decorNumber.mixin" as *;
 
 .benefits {
   padding: 120px 0;
+
+  .center-container {
+    position: relative;
+
+    &::after {
+      @include decorNumber("II", 0.5)
+    }
+  }
 }
 
 .benefits__list {

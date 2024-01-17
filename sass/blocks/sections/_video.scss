@@ -1,6 +1,16 @@
+@use "../../mixins/decorNumber.mixin" as *;
+
 .video {
   text-align: center;
   padding-bottom: 180px;
+  
+  .center-container {
+    position: relative;
+
+    &::after {
+      @include decorNumber("IV", 1.6  )
+    }
+  }
 }
 
 .video__link {

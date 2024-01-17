@@ -1,5 +1,16 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
+@use "../../mixins/decorNumber.mixin" as *;
+
+.apartments {
+  .center-container {
+    position: relative;
+
+    &::after {
+      @include decorNumber("III", 1, 'left')
+    }
+  }
+}
 
 .apartments__list {
   margin-top: 88px;
@@ -7,4 +18,3 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-
