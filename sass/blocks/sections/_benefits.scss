@@ -1,6 +1,6 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
-@use "../../mixins/decorNumber.mixin" as *;
+@use "../../base/mixins/decorNumber.mixin" as *;
 
 .benefits {
   padding: 120px 0;

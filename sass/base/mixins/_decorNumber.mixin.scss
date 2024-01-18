@@ -1,4 +1,4 @@
-@use "../base/vars/fonts" as *;
+@use "../vars/fonts" as *;
 
 @mixin decorNumber($content, $line-height: 1, $direction: 'right') {
   content: $content;
