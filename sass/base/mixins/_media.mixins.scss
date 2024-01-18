@@ -1,0 +1,7 @@
+@use "../vars/breakpoints" as *;
+
+@mixin mediaTablet {
+  @media screen and (max-width: ($breakpoint-tablet - 1)) {
+    @content;
+  }
+}
