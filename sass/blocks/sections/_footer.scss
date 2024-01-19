@@ -15,6 +15,15 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.7px;
+
+  .logo_footer {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -10px;
+    }
+  }
 }
 
 .footer__content__col {
