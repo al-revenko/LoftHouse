@@ -1,5 +1,7 @@
 @use './vars/fonts' as *;
 @use './vars/colors' as *;
+@use './mixins/media.mixins' as *;
+
 
 body {
   font-family: $font-main;
@@ -27,6 +29,10 @@ button {
   font-family: $font-accent;
   font-size: 36px;
   font-weight: 700;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
 }
 
 .center-container {

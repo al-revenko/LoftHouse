@@ -1,4 +1,5 @@
 @use "../vars/fonts" as *;
+@use "./media.mixins" as *;
 
 @mixin decorNumber($content, $line-height: 1, $direction: 'right') {
   content: $content;
@@ -19,4 +20,9 @@
     left: calc(50% + 550px);
     transform: translate(-50%, 0);
   }
+
+  @include mediaTablet {
+    display: none;
+  }
+
 }

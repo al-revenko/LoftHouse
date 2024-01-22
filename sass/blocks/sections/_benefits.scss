@@ -1,16 +1,23 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
+
 @use "../../base/mixins/decorNumber.mixin" as *;
+@use "../../base/mixins/media.mixins" as *;
 
 .benefits {
+  overflow: hidden;
   padding: 120px 0;
 
   .center-container {
     position: relative;
 
     &::after {
-      @include decorNumber("II", 0.5)
+      @include decorNumber("II", 0.5);
     }
+  }
+  
+  @include mediaTablet {
+    padding: 80px 0;
   }
 }
 
@@ -21,10 +28,21 @@
   margin: 0 auto;
   gap: 70px;
   max-width: 794px;
+
+  @include mediaTablet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px 0;
+  }
 }
 
 .benefits__item {
+  color: $color-white;
+  font-family: $font-secondary;
   text-align: center;
+  font-weight: 300;
+  line-height: 27px;
+  font-size: 20px;
 
   img {
     width: 80px;
@@ -33,12 +51,16 @@
   }
 
   p {
-    color: $color-white;
     text-align: center;
-    font-family: $font-secondary;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 27px;
+  }
+
+  @include mediaTablet {
+    font-size: 16px;
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 23px;
+    }
   }
 }

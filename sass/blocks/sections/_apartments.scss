@@ -1,8 +1,12 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
+@use "../../base/vars/elements-spacing" as *;
+
 @use "../../base/mixins/decorNumber.mixin" as *;
+@use "../../base/mixins/media.mixins" as *;
 
 .apartments {
+  overflow: hidden;
   .center-container {
     position: relative;
 
@@ -13,8 +17,14 @@
 }
 
 .apartments__list {
-  margin-top: 88px;
+  margin-top: $marginTop-to-title;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+
+  @include mediaTablet {
+    margin-top: $marginTop-to-title-m;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px 30px;
+  }
 }

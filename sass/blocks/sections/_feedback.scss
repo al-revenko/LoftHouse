@@ -1,8 +1,24 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
+@use "../../base/vars/elements-spacing" as *;
+
+@use "../../base/mixins/media.mixins" as *;
 
 .feedback {
-  padding-bottom: 180px;
+  padding-bottom: $padding-section-y;
+
+  @include mediaTablet {
+    padding-bottom: $padding-section-y-m;
+    
+    .feedback__form {
+      margin-top: $marginTop-to-title-m;
+      grid-template-columns: 1fr;
+
+      .form-disclaimer {
+        order: 5;
+      }
+    }
+  }
 }
 
 .feedback__form {

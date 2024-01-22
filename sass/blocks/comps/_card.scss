@@ -1,5 +1,6 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
+@use "../../base/mixins/media.mixins" as *;
 
 .card {
   display: block;
@@ -70,5 +71,15 @@
   img,
   &::after {
     transition: all 0.2s ease-in;
+  }
+
+  @include mediaTablet {
+    font-size: 18px;
+
+    h3 {
+      left: 30px;
+      bottom: 30px;
+      right: 20px;
+    }
   }
 }

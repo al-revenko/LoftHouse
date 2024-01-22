@@ -1,9 +1,13 @@
 @use "../../base/vars/colors" as *;
 @use "../../base/vars/fonts" as *;
+@use "../../base/vars/elements-spacing" as *;
+
 @use "../../base/mixins/decorNumber.mixin" as *;
+@use "../../base/mixins/media.mixins" as *;
 
 .map {
-  padding-bottom: 180px;
+  overflow: hidden;
+  padding: $padding-section-y 0;
   
   .center-container {
     position: relative;
@@ -12,10 +16,18 @@
       @include decorNumber("V", 1, 'left')
     }
   }
+
+  @include mediaTablet {
+    padding: $padding-section-y-m 0;
+
+    .map__content {
+      margin-top: $marginTop-to-title-m;
+    }
+  }
 }
 
 .map__content {
-  margin-top: 88px;
+  margin-top: $marginTop-to-title;
   background-color: #626262;
   min-height: 358px;
 }

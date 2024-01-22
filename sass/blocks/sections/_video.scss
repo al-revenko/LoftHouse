@@ -1,8 +1,9 @@
 @use "../../base/mixins/decorNumber.mixin" as *;
+@use "../../base/mixins/media.mixins" as *;
 
 .video {
+  overflow: hidden;
   text-align: center;
-  padding-bottom: 180px;
   
   .center-container {
     position: relative;
@@ -46,4 +47,9 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in;
+
+  @include mediaTablet {
+    width: 80px;
+    height: 80px;
+  }
 }
