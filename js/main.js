@@ -14,6 +14,8 @@ $(document).ready(function () {
 
   $('#phone-cta').inputmask({ mask: phoneMask }); 
   $('#phone-feedback').inputmask({ mask: phoneMask }); 
+
+  $('#video-link').modalVideo();
 });
 
 
