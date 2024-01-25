@@ -25,11 +25,11 @@
   }
 
   &--map::before {
-    background-image: url('/img/svg/header/point.svg');
+    background-image: url('../img/svg/header/point.svg');
   }
 
   &--tel::before {
-    background-image: url('/img/svg/header/phone-call.svg');
+    background-image: url('../img/svg/header/phone-call.svg');
   }
 
   @include mediaTablet {
