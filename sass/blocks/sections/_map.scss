@@ -8,12 +8,12 @@
 .map {
   overflow: hidden;
   padding: $padding-section-y 0;
-  
+
   .center-container {
     position: relative;
 
     &::after {
-      @include decorNumber("V", 1, 'left')
+      @include decorNumber("V", 1, "left");
     }
   }
 
@@ -29,5 +29,12 @@
 .map__content {
   margin-top: $marginTop-to-title;
   background-color: #626262;
-  min-height: 358px;
+  height: 358px;
+}
+
+.map__marker-icon {
+  width: 40px;
+
+  position: relative;
+  transform: translate(-50%, -50%);
 }

@@ -471,7 +471,13 @@ button {
 .map__content {
   margin-top: 88px;
   background-color: #626262;
-  min-height: 358px;
+  height: 358px;
+}
+
+.map__marker-icon {
+  width: 40px;
+  position: relative;
+  transform: translate(-50%, -50%);
 }
 
 .feedback {
